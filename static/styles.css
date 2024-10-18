@@ -10,8 +10,9 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow-y: scroll;
-    overflow-x: scroll;
+    /* overflow-y: scroll;
+    overflow-x: scroll; */
+    overflow: hidden;
 }
 
 header {
@@ -196,6 +197,8 @@ nav a {
 
 .p1-title {
     text-align: center;
+    border-left: 5%; 
+    border-right: 5%; 
 }
 
 .p1-subtitle {
@@ -303,6 +306,12 @@ nav a {
     justify-content: flex-start;
   }
 
+  .p3-project-preview a {
+    text-align: right; 
+    color:rgb(165, 76, 192);
+    padding-right: 10px;
+  }
+
 /* slide 4 */
 
 .p4-title h2 {
@@ -388,6 +397,24 @@ nav a {
     margin-top: 10%;
     margin: 20% 15% 20% 15%;
     text-align: center;
+    overflow:hidden;
+}
+
+.p5-wrapper .row {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically */
+    flex-wrap: wrap;          /* Allows wrapping on smaller screens */
+    height: 100%;             /* Full height to make vertical centering possible */
+}
+
+.p5-wrapper .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  /* Centers icons vertically */
+    height: 100%;
+    padding: 10px;            /* Optional padding for spacing */
 }
 
 
